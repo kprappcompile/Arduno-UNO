@@ -12,10 +12,8 @@
 <div>
 <img src="images/arduino-uno.png" width="500">
 </div>
-
-
 แสดงขาต่างของบอร์ด
-
+<img src="images/arduino-uno-pin.png" width="500">
 <h3>Arduino Uno เป็นบอร์ดไมโครคอนโทรลเลอร์ที่ทำงานบนพื้นฐานของ ATmega 328 ซึ่งประกอบด้วย</h3>
 <ul>
 <li>14 digital input/output pins ( 6 pin สามารถใช้เป็น PWM output ได้ )</li>
@@ -29,19 +27,8 @@
 
 Arduino Uno Revision 2 มี ATmega8U2 ทำให้อัพเดท firmware ผ่าน USB protocal ที่เรียกว่า DFU( Device Firmware Update ) ได้ง่ายขึ้น<br>
  Arduino Uno สามารถเชื่อมต่อโดย USB connector หรือ จาก power supply จากภายนอกได้ โดยแหล่งพลังงานจะถูกเลือกโดยอัตโนมัติ<br>
-<ul>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>    
-</ul>
+
 <table>
-<tr>
-<th></th>
-<th></th>
-</tr>
 <tr>
 <td>Microcontroller</td>
 <td>ATmega328P</td>
