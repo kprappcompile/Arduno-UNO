@@ -16,7 +16,101 @@
 
 แสดงขาต่างของบอร์ด
 
+<h3>Arduino Uno เป็นบอร์ดไมโครคอนโทรลเลอร์ที่ทำงานบนพื้นฐานของ ATmega 328 ซึ่งประกอบด้วย</h3>
+<ul>
+<li>14 digital input/output pins ( 6 pin สามารถใช้เป็น PWM output ได้ )</li>
+<li>6 analog inputs</li>
+<li>16 MHz ceramic resonator ( ใช้สำหรับกรองความถี่ให้กับบอร์ดไมโครคอนโทรลเลอร์ )</li>
+<li>USB connection</li>
+<li> ICSP header (In-Circuit Serial Programming)</li>
+<li>ปุ่มกด reset</li>
+<li>ช่องเสียบแหล่งจ่าย</li>  
+</ul>
 
+Arduino Uno Revision 2 มี ATmega8U2 ทำให้อัพเดท firmware ผ่าน USB protocal ที่เรียกว่า DFU( Device Firmware Update ) ได้ง่ายขึ้น<br>
+ Arduino Uno สามารถเชื่อมต่อโดย USB connector หรือ จาก power supply จากภายนอกได้ โดยแหล่งพลังงานจะถูกเลือกโดยอัตโนมัติ<br>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>    
+</ul>
+<table>
+<tr>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td>Microcontroller</td>
+<td>ATmega328P</td>
+</tr>
+<tr>
+<td>Operating Voltage</td>
+<td>5V</td>
+</tr>
+<tr>  
+<td>Input Voltage (recommended)</td>
+<td>7-12V</td>
+</tr>
+<tr>
+<td>Input Voltage (limit)</td> 
+<td>6-20V</td>
+</tr>
+<tr>
+<td>Digital I/O Pins</td> 
+<td>14 (of which 6 provide PWM output)</td>
+</tr>
+<tr>
+<td>PWM Digital I/O Pins</td>
+<td>6</td>
+</tr>
+<tr>   
+<td>Analog Input Pins</td>  
+<td>6</td>
+</tr>
+<tr>
+<td>DC Current per I/O Pin</td>  
+<td>20 mA</td>
+</tr>
+<tr>
+<td>DC Current for 3.3V Pin</td>
+<td>50 mA</td>
+</tr>
+<tr>
+<td>Flash Memory</td> 
+<td>32 KB (ATmega328P) of which 0.5 KB used by bootloader</td>
+</tr>
+<tr> 
+<td>SRAM</td> 
+<td>2 KB (ATmega328P)</td>
+</tr>
+<tr>
+<td>EEPROM</td>
+<td>1 KB (ATmega328P)</td>
+</tr>
+<tr>
+<td>Clock Speed</td>  
+<td>16 MHz</td>
+</tr>
+<tr>
+<td>LED_BUILTIN</td>
+<td>13</td>
+</tr>
+<tr>
+<td>Length</td>
+<td>68.6 mm</td>
+</tr>
+<tr>
+<td>Width</td>
+<td>53.4 mm</td>
+</tr>
+<tr>
+<td>Weight</td>
+<td>25 g</td>
+</tr>
+</table>	
 ตัวอย่าง Code
 <div>
 <img src="images/arduinotestled.png" width="500">
