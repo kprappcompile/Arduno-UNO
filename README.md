@@ -4,10 +4,14 @@
 เราสามารถใช้ โปรแกรม Arduino IDE ในการเขียนโปรแกรม และ Upload โปรแกรมลงBoard Arduinoได้ โดยการเชื่อมต่อผ่านสายUSB เท่านี้เราก็จะได้สนุกกับความาสารของ Board Arduino กันแล้ว</p>
 
 
-1. ติดตั้ง โปรแกรม Arduino IDE <a href="https://www.arduino.cc/en/Main/Software" target="_blank">Click</a> <br>
-2. ติดตั้ง Driver USB CH340 <a href="https://sparks.gogo.co.nz/ch340.html" target="_blank">Click</a>
+1. ติดตั้ง โปรแกรม Arduino IDE Download ได้ที่  <a href="https://www.arduino.cc/en/Main/Software" target="_blank">Click</a> <br>
+2. ติดตั้ง Driver USB CH340 Download ได้ที่ <a href="https://sparks.gogo.co.nz/ch340.html" target="_blank">Click</a>
 
 รูปร่างบอร์ด
+
+<div>
+<img src="images/arduino-uno.png" width="500">
+</div>
 
 
 แสดงขาต่างของบอร์ด
@@ -17,10 +21,15 @@
 <div>
 <img src="images/arduinotestled.png" width="500">
 </div>
+เราสร้างตัวแปร led กำหนดค่า ที่ขา 13 ของบอร์ด
+int led = 13;
 
-    int led = 13; 
+กำหนด  led ให้ทำงาน โมด OUTPUT  
+pinMode(led, OUTPUT); 
+
+    int led = 13;  // เราสร้างตัวแปรมากำหนดค่า ที่ขา 13 ของบอร์ด
     void setup() {                
-      pinMode(led, OUTPUT);     
+      pinMode(led, OUTPUT);  // กำหนด  led ให้ทำงาน โมด OUTPUT   
     }
 
     void loop() {
