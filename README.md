@@ -15,15 +15,15 @@
 
 ตัวอย่าง Code
 
-nt led = 13;
-  void setup() {                
-    pinMode(led, OUTPUT);     
-  }
+    int led = 13; 
+    void setup() {                
+      pinMode(led, OUTPUT);     
+    }
 
-  void loop() {
-    digitalWrite(led, HIGH);  
-    delay(1000);              
-    digitalWrite(led, LOW);  
-    delay(1000);              
-  }
+    void loop() {
+      digitalWrite(led, HIGH);  
+      delay(1000);              
+      digitalWrite(led, LOW);  
+      delay(1000);              
+    }
 
