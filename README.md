@@ -98,15 +98,44 @@ Arduino Uno Revision 2 มี ATmega8U2 ทำให้อัพเดท firmwa
 <td>25 g</td>
 </tr>
 </table>	
-ตัวอย่าง Code
+<hr>
+<h3>การใช้งาน</h3>
+Arduino UNO R3 จะมีขา Digital input/output อยู่ 14 ขา คือขา 0 ถึง 13 
+หมายความว่า สามารถกำหนดให้เป็นขาที่เป็น input หรือ output ก็ได้
+ขา Digital ก็ยังรับค่าที่เป็น Analog ได้ ซึ่งจะสามารถรับค่า Analog ค่าตั้งแต่ 0 - 1023
+จะไม่สามารถส่งค่า Analog ออกไปได้
+ส่วนขา Analog input/uotput อยู่ 6 ขา คือขา A0 ถึง A5
+การใช้งานคล้ายกับขา Digital จะมีข้อแตกต่างเล็กน้อย คือ สามารถส่งค่า Analog ออกไปได้
+<hr>
+<h3>การเขียนโปรแกรม Arduino ด้วย Arduino IDE</h3>
+หลังจากเราติดตั้งโปรแกรมเป็นที่เรียบร้อย ให้เราเปิดโปรแกรมขึ้นมา
+Arduino IDE จะ New Project ใหม่มาให้
+พร้อมกับ Function เพื้นฐานที่ต้องมีในการเขียนโปรแกรม มา 2 Function
+ได้แก่ setup กับ loop
+ตามรูป
 <div>
+<img src="images/ideopen.png" width="500">
+</div>
+<hr>
+<h3>ตัวอย่าง Code ไฟกระพริบ</h3>
+<div>
+ ต่อวงจรตามรูป
 <img src="images/arduinotestled.png" width="500">
 </div>
-เราสร้างตัวแปร led กำหนดค่า ที่ขา 13 ของบอร์ด
-int led = 13;
-
-กำหนด  led ให้ทำงาน โมด OUTPUT  
-pinMode(led, OUTPUT); 
+การเขียนโปรแกรมแบ่งออกเป็น 2 ส่วน
+คือการ setup จะเป็นการกำหนดค่า เริ่มต้นที่ function setup
+ 1. เราจะสร้างตัวแปร led กำหนดค่า ที่ขา 13 ของบอร์ด 
+ 2. ใน function setup กำหนด led ให้ทำงาน โมด OUTPUT 
+ โปรแกรมจะทำงานครั้งแรกครั้งเดียว
+ 
+ขั้นตอนที่ 2 กำหนดการทำงานของโปรแกรม
+ 1. digitalWrite(led, HIGH);   สั่งให้ led เป็น HIGH (เป็น HIGH, 1 ก็ได้) หลอด LED จะติด
+ 2. delay(1000); หยุดการทำงาน 1วินาที
+ 3. digitalWrite(led, HIGH);   สั่งให้ led เป็น HIGH (เป็น HIGH, 1 ก็ได้) หลอด LED จะติด
+ 4. delay(1000); หยุดการทำงาน 1วินาที
+ โปรแกรมจะกลับไปวนโลปใหม่ ทไให้ เราจะเห็น หลอด LED ติด 1 วินาที ดับ 1 วินาที
+ 
+ตาม Code
 
     int led = 13;  // เราสร้างตัวแปรมากำหนดค่า ที่ขา 13 ของบอร์ด
     void setup() {                
