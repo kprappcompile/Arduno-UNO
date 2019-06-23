@@ -160,5 +160,5 @@ Arduino IDE จะ New Project ใหม่มาให้
 
 
 
-ขอบคุณ  www.bq.com
+ขอบคุณ  www.bq.com <br>
 ขอบคุณ  http://fritzing.org/home/
